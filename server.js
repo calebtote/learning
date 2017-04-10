@@ -15,7 +15,7 @@ app.get('/', function (req, res, next) {
     }
 })
 
-app.get('footprint', function (req, res, next) {
+app.get('/footprint', function (req, res, next) {
     try {
         console.log('In #footprint')
         template = require('jade').compileFile(__dirname + '/source/templates/footprint.jade')
