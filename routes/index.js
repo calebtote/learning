@@ -7,9 +7,10 @@ router.get('/', function(req, res){
   });
 });
 
-router.get('/about', function(req, res){
-  res.render('about', {
-    title: 'About'
+router.get('/footprint', function(req, res){
+  console.log('In #footprint')
+  res.render('footprint', {
+    title: 'Footprint'
   });
 });
 
