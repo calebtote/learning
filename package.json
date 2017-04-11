@@ -1,10 +1,10 @@
 {
-  "name": "express-example",
-  "version": "0.0.0",
+  "name": "sherlock-prototype",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build-css": "stylus source/stylesheets/* -o static/css/",
-    "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
+    "build-css": "stylus source/stylesheets/index.styl -o static/css/",
+    "watch-css": "stylus source/stylesheets/index.styl -o static/css/* -w",
     "clean": "rm -rf static\\css && mkdir static\\css",
     "build": "npm run clean && npm run build-css",
     "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
